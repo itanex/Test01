@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    table(class="table table-stripped")
+        thead
+            tr
+                th Title
+                th Director
+        tbody
+            tr(ng-repeat="movie in vm.movies")
+                td {{movie.title}}
+                td {{movie.director}}
